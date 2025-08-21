@@ -3,7 +3,7 @@ title: "Demystifying Design Patterns: Your First Step into Elegant Code"
 description: "An accessible introduction to design patterns, explaining their purpose and practical benefits for writing clean, maintainable code."
 image: ./../assets/img/posts/2025-08-21-demystifying-design-patterns-your-first-step-into-elegant-code.png
 
-date: 2025-08-21 22:00:00 +0300
+date: 2025-08-21 00:00:00 +0300
 categories: [Design Patterns]
 tags: [
          design patterns, software development, object-oriented programming, oop, java, 
@@ -137,7 +137,7 @@ Some patterns blur these boundaries, but this grouping is a helpful starting poi
 
 ---
 
-In the next article, we’ll dive deep into the **Singleton Pattern**, exploring real-world use cases, pitfalls, and best practices.
+**Next Up:** In the next article, we’ll dive deep into the **Singleton Pattern**, exploring real-world use cases, pitfalls, and best practices.
 
 ---
 
