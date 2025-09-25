@@ -95,14 +95,14 @@ Key components:
 
 Let’s turn the logistics analogy into working Java.
 
-### Step 1: Product Interface
+### Step 1 — Product Interface
 ```java
 public interface Transport {
     void deliver();
 }
 ```
 
-### Step 2: Concrete Products
+### Step 2 — Concrete Products
 ```java
 public class Truck implements Transport {
     @Override
@@ -119,7 +119,7 @@ public class Ship implements Transport {
 }
 ```
 
-### Step 3: Creator
+### Step 3 — Creator
 ```java
 public abstract class Logistics {
     public void planDelivery() {
@@ -132,7 +132,7 @@ public abstract class Logistics {
 }
 ```
 
-### Step 4: Concrete Creators
+### Step 4 — Concrete Creators
 ```java
 public class RoadLogistics extends Logistics {
     @Override
@@ -149,7 +149,7 @@ public class SeaLogistics extends Logistics {
 }
 ```
 
-### Bonus Step 5: A Helper Simple Factory to Select the Creator
+### Step 5 — **(BONUS)** — A Helper Simple Factory to Select the Creator
 ```java
 public class LogisticsFactory {
 
@@ -173,7 +173,7 @@ public class LogisticsFactory {
 }
 ```
 
-### Step 6: Usage
+### Step 6 — Usage
 ```java
 public class Application {
     public static void main(String[] args) {
@@ -199,6 +199,7 @@ It's important to recognize that this example beautifully demonstrates two disti
 - ***The Simple Factory Idiom:*** This is represented by the `LogisticsFactory` class. We use it as a simple, centralized helper to hide the logic of choosing which creator (`RoadLogistics` or `SeaLogistics`) to use.
 
 By combining them, the `Application` is completely decoupled. It doesn't know about concrete products or concrete creators. It simply asks the `LogisticsFactory` for the right tool for the job and then uses it. This is a perfect example of applying the Single Responsibility Principle.
+
 
 ---
 
@@ -271,6 +272,7 @@ The **Factory Method Pattern** is a cornerstone of clean, extensible OOP design.
 
 ## References & Further Reading
 - Refactoring.Guru: [Factory Method](https://refactoring.guru/design-patterns/factory-method)
+- GeeksforGeeks: [Factory method Design Pattern](https://www.geeksforgeeks.org/system-design/factory-method-for-designing-pattern/)
 - *Head First Design Patterns* by Eric Freeman & Elisabeth Robson
 - *Design Patterns: Elements of Reusable Object-Oriented Software* by Gamma, Helm, Johnson, Vlissides
 
