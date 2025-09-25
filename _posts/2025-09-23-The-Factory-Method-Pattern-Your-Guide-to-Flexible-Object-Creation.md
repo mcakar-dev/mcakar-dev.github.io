@@ -244,13 +244,13 @@ Here, Spring decides which bean to create, based on properties.
 
 ## 7. When to Use or Avoid
 
-Use it when:
+**Use it when:**
 
 - The class can’t anticipate the exact type of objects it needs.
 - You want subclasses to decide object creation.
 - Building extensible frameworks/libraries.
 
-Avoid it when:
+**Avoid it when:**
 
 - You only need a simple constructor.
 - You end up with parallel hierarchies that don’t add real value.
@@ -266,7 +266,13 @@ The **Factory Method Pattern** is a cornerstone of clean, extensible OOP design.
 - *Main Benefit*: Loose coupling & flexibility.
 - *Signs*: Abstract classes with methods returning abstract types.
 
+---
+
 ***Pro Tip***: Next time you see a chain of `if/else` deciding object creation, ask: *Should this be a Factory Method?*
+
+---
+
+**Next Up:**  A single factory is useful for our **logistics company**, but how do we create entire kits of compatible equipment—like a specific ship and its matching container? We'll use the **Abstract Factory Pattern** to ensure all our created objects belong to the same family.
 
 ---
 

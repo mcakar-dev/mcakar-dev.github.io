@@ -349,8 +349,9 @@ The Abstract Factory pattern is a design powerhouse. It's the ultimate solution 
 **Final Thought:**  
 If the Factory Method is about choosing the right tool for the job, the Abstract Factory is about choosing the right, fully-stocked toolbox. It’s a higher level of abstraction, but for complex systems, that level of organization is priceless.
 
-**Next Up:**  
-Tired of messy constructors with dozens of optional parameters? We'll explore the **Builder** pattern to construct complex objects step by step with clarity and grace.
+---
+
+**Next Up:** Tired of messy constructors with dozens of optional parameters? We'll explore the **Builder Pattern** to construct complex objects step by step with clarity and grace.
 
 ---
 

@@ -185,13 +185,13 @@ Spring ensures that only **one instance** of `AppConfigService` exists within th
 
 ## 7: When to Use or Avoid
 
-Use it when:
+**Use it when:**
 
 - There must be exactly one instance of a class, and it must be easily accessible.
 - Shared resources (e.g., logging, configuration, caching) need centralized control.
 - Object creation is expensive, and you want to reuse the same instance.
 
-Avoid it when:
+**Avoid it when:**
 
 - You just need a utility class with static methods.
 - The instance may need to vary or be replaced in testing.
