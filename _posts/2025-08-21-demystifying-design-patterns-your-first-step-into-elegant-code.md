@@ -1,8 +1,8 @@
 ---
+
 title: "Demystifying Design Patterns: Your First Step into Elegant Code"
 description: "An accessible introduction to design patterns, explaining their purpose and practical benefits for writing clean, maintainable code."
 image: ./../assets/img/posts/2025-08-21-demystifying-design-patterns-your-first-step-into-elegant-code.png
-
 date: 2025-08-21 00:00:00 +0300
 categories: [Design Patterns]
 tags: [
@@ -14,7 +14,6 @@ tags: [
          reusable software solutions, clean code practices, programming design patterns, 
          gang of four design patterns, java design patterns tutorial
       ]
----
 
 ---
 
@@ -23,7 +22,7 @@ tags: [
 
 ---
 
-## 1: The Hook and Introduction
+## **1: The Hook and Introduction**
 
 Imagine you’re building a house. Before the first brick is laid, you need a blueprint — a proven plan that ensures every room is in the right place, the structure is stable, and the end result is functional and beautiful. You don’t reinvent how walls are built every time; you follow established best practices while adding your own unique touch.
 
@@ -40,7 +39,7 @@ In this article, we’ll break the intimidation barrier. You’ll learn:
 
 ---
 
-## 2: What Exactly Is a Design Pattern?
+## **2: What Exactly Is a Design Pattern?**
 
 At its core, a design pattern is:
 
@@ -90,7 +89,7 @@ public class Singleton {
 
 ---
 
-## 3: Why Should I Care About Design Patterns?
+## **3: Why Should I Care About Design Patterns?**
 
 Here’s why design patterns are worth your time:
 
@@ -103,7 +102,7 @@ Here’s why design patterns are worth your time:
 
 ---
 
-## 4: The Three Major Categories of Patterns
+## **4: The Three Major Categories of Patterns**
 
 Design patterns generally fall into three groups. The lists below show **some** of the most common and representative examples — not all patterns in each category:
 
@@ -123,7 +122,7 @@ Some patterns blur these boundaries, but this grouping is a helpful starting poi
 
 ---
 
-## 5: Next Steps and Conclusion
+## **5: Next Steps and Conclusion**
 
 **Key Takeaways:**
 
@@ -141,8 +140,7 @@ Some patterns blur these boundaries, but this grouping is a helpful starting poi
 
 ---
 
-## 6: References & Further Reading
-
+## **References & Further Reading**
 - Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
 - Fowler, Martin. *Patterns of Enterprise Application Architecture*. Addison-Wesley, 2002.
 - Martin, Robert C. *Clean Architecture: A Craftsman’s Guide to Software Structure and Design*. Prentice Hall, 2017.

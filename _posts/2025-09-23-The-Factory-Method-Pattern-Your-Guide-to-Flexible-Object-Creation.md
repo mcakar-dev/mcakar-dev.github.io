@@ -1,4 +1,5 @@
 ---
+
 title: "Mastering the Factory Method: Beyond the new Keyword"
 description: "A hands-on guide to the Factory Method pattern, explaining how to decouple object creation for building flexible and maintainable software."
 image: "./../assets/img/posts/2025-09-23-mastering-the-factory-method-beyond-the-new-keyword.png"
@@ -6,7 +7,6 @@ date: 2025-09-23 00:00:00 +0300
 categories: [Design Patterns, Creational Patterns]
 tags: [ design patterns, software development, object-oriented programming, oop, java, clean code, software architecture, programming, best practices, developer tips, programming best practices, software engineering, creational patterns, java design patterns tutorial, spring boot, gang of four design patterns, factory method, factory pattern, decoupling ]
 
-    
 ---
 
 > This article had its first draft written by AI, then refined by human editing to ensure clarity, correctness, and real-world applicability. 
@@ -14,7 +14,7 @@ tags: [ design patterns, software development, object-oriented programming, oop,
 
 ---
 
-## 1. The Hook and Introduction
+## **1. The Hook and Introduction**
 
 Have you ever been to a fast-food franchise which create burgers? The parent company has a standard menu and a core process for making a *burger.* But a franchise in India might create a "McAloo Tikki," while one in Germany offers a "Nürnberger." The parent company defines the interface for creating a burger, but it’s the regional franchises (the subclasses) that decide *which* burger to make.
 
@@ -30,7 +30,7 @@ In this post, you’ll learn:
 
 ---
 
-## 2. A Real-World Analogy: The Logistics Company
+## **2. A Real-World Analogy: The Logistics Company**
 
 Imagine building software for a logistics company. You need to ship goods, but the mode of transport isn’t known upfront: road or sea?
 
@@ -54,7 +54,7 @@ Your main app just calls `createTransport()`, without caring if it’s a **Truck
 
 ---
 
-## 3. Pattern Overview
+## **3. Pattern Overview**
 
 The **Gang of Four** define Factory Method as:
 
@@ -68,7 +68,7 @@ Key components:
 
 ---
 
-## 4. UML Diagram
+## **4. UML Diagram**
 
 ```
 +---------------------+               +--------------------+
@@ -91,7 +91,7 @@ Key components:
 
 ---
 
-## 5. Code Example in Java
+## **5. Code Example in Java**
 
 Let’s turn the logistics analogy into working Java.
 
@@ -203,7 +203,7 @@ By combining them, the `Application` is completely decoupled. It doesn't know ab
 
 ---
 
-## Spring Boot Context
+## **Spring Boot Context**
 
 In **Spring Boot**, you rarely hand-roll factories. The IoC container already acts as one. Example:
 
@@ -229,7 +229,7 @@ Here, Spring decides which bean to create, based on properties.
 
 ---
 
-## 6. Advantages & Disadvantages
+## **6. Advantages & Disadvantages**
 
 **Advantages**
 - Loose Coupling → Client is decoupled from concrete implementations.
@@ -242,7 +242,7 @@ Here, Spring decides which bean to create, based on properties.
 
 ---
 
-## 7. When to Use or Avoid
+## **7. When to Use or Avoid**
 
 **Use it when:**
 
@@ -257,7 +257,7 @@ Here, Spring decides which bean to create, based on properties.
 
 ---
 
-## 8. Conclusion
+## **8. Conclusion**
 
 The **Factory Method Pattern** is a cornerstone of clean, extensible OOP design. By pushing object creation into subclasses, you decouple client code and make systems easier to extend.
 
@@ -276,7 +276,7 @@ The **Factory Method Pattern** is a cornerstone of clean, extensible OOP design.
 
 ---
 
-## References & Further Reading
+## **References & Further Reading**
 - Refactoring.Guru: [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 - GeeksforGeeks: [Factory method Design Pattern](https://www.geeksforgeeks.org/system-design/factory-method-for-designing-pattern/)
 - *Head First Design Patterns* by Eric Freeman & Elisabeth Robson

@@ -5,7 +5,7 @@ description: "A practical tutorial on the Builder pattern, showing how to constr
 image: "./../assets/img/posts/2025-09-27-mastering-the-builder-pattern-constructing-objects-step-by-step.png"  
 date: 2025-09-27 00:00:00 +0300  
 categories: [Design Patterns, Creational Patterns]  
-tags: [design patterns, software development, oop, java, clean code, creational patterns, builder pattern, gang of four design patterns, software architecture, decoupling, java design patterns tutorial, spring boot, fluent interface, immutability]  
+tags: [ design patterns, software development, object-oriented programming, oop, java, clean code, software architecture, programming, best practices, developer tips, programming best practices, software engineering, creational patterns, java design patterns tutorial, spring boot, gang of four design patterns, builder, builder pattern, decoupling, immutability ]
 
 ---
 
@@ -120,7 +120,7 @@ Core roles:
 
 Let's build a House object, which can have many optional features.
 
-### **Step 1 — The Product**
+### Step 1 — The Product
 
 This is the complex object we want to create. Note the private constructor.
 
@@ -200,7 +200,7 @@ public class House {
 }
 ```
 
-### **Step 2 — Client and Usage**
+### Step 2 — Client and Usage
 
 The client code is now clean, readable, and less error-prone.
 

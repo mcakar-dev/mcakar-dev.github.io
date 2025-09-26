@@ -5,7 +5,7 @@ description: "Go beyond single object creation and learn how the Abstract Factor
 image: "./../assets/img/posts/2025-09-25-mastering-the-abstract-factory-one-interface-to-create-them-all.png" 
 date: 2025-09-25 00:00:00 +0300 
 categories: [Design Patterns, Creational Patterns] 
-tags: [design patterns, software development, oop, java, clean code, creational patterns, factory pattern, abstract factory, gang of four design patterns, software architecture, decoupling, java design patterns tutorial, spring boot, factory method]
+tags: [ design patterns, software development, object-oriented programming, oop, java, clean code, software architecture, programming, best practices, developer tips, programming best practices, software engineering, creational patterns, java design patterns tutorial, spring boot, gang of four design patterns, abstract factory, abstract factory pattern, decoupling ]
 
 ---
 
@@ -14,7 +14,7 @@ tags: [design patterns, software development, oop, java, clean code, creational 
 
 ---
 
-## 1. The Hook and Introduction
+## **1. The Hook and Introduction**
 
 In our last post we used a fast-food franchise as an analogy for the **Factory Method**: each franchise (subclass) decides which burger (product) to make. But what about a *combo meal*? A combo isn't just a random burger, fries, and drink — it's a **consistent family** of items that go together (e.g., Classic Beef Burger + Classic Fries + Soda).
 
@@ -29,7 +29,7 @@ In this article, you'll learn:
 
 ---
 
-## 2. A Real-World Analogy: The Logistics Company Revisited
+## **2. A Real-World Analogy: The Logistics Company Revisited**
 
 Recall the `Logistics` creator from the Factory Method article that produced a single `Transport` object (e.g., `Truck` or `Ship`). Real shipments, however, are composed of multiple cooperating pieces:
 
@@ -40,7 +40,7 @@ If you mix and match (e.g., a `Container` with a `CardboardBox`-based manifest),
 
 ---
 
-## 3. Pattern Overview
+## **3. Pattern Overview**
 
 The Gang of Four describe the Abstract Factory as:
 
@@ -56,7 +56,7 @@ Core roles:
 
 ---
 
-## 4. UML Diagram
+## **4. UML Diagram**
 
 ```
 +---------------------+                         +-------------+         +-------------+
@@ -87,7 +87,7 @@ Core roles:
 ```
 ---
 
-## 5. Code Example in Java
+## **5. Code Example in Java**
 
 Below is a compact, but complete, example showing how to implement the pattern for our logistics scenario.
 
@@ -222,7 +222,7 @@ public class Application {
 
 ---
 
-## Spring Boot Context
+## **Spring Boot Context**
 
 In a modern **Spring Boot** application, you wouldn't typically create a manual `ShippingKitFactory`. Instead, the Dependency Injection (DI) container manages the creation and wiring of your object families using configuration and profiles.
 
@@ -307,7 +307,7 @@ With this setting, Spring will only create the `Truck` and `CardboardBox` beans,
 
 ---
 
-## 6. Advantages & Disadvantages
+## **6. Advantages & Disadvantages**
 
 **Advantages**
 
@@ -322,7 +322,7 @@ With this setting, Spring will only create the `Truck` and `CardboardBox` beans,
 
 ---
 
-## 7. When to Use or Avoid
+## **7. When to Use or Avoid**
 
 **Use it when:**
 
@@ -337,7 +337,7 @@ With this setting, Spring will only create the `Truck` and `CardboardBox` beans,
 
 ---
 
-## 8. Conclusion
+## **8. Conclusion**
 
 The Abstract Factory pattern is a design powerhouse. It's the ultimate solution for ensuring that related objects work together as a consistent set. By creating a "factory for factories," you build robust systems where components are guaranteed to be compatible.
 
@@ -355,7 +355,7 @@ If the Factory Method is about choosing the right tool for the job, the Abstract
 
 ---
 
-## References & Further Reading
+## **References & Further Reading**
 - *Head First Design Patterns* by Eric Freeman & Elisabeth Robson  
 - *Design Patterns: Elements of Reusable Object-Oriented Software* by Gamma, Helm, Johnson, Vlissides  
 - *Clean Architecture: A Craftsman's Guide to Software Structure and Design* by Robert C. Martin 

@@ -1,11 +1,12 @@
 ---
+
 title: "Mastering the Singleton Pattern: One Instance to Rule Them All" 
 description: "A practical deep dive into the Singleton Pattern, explaining when and how to use it effectively in Java applications." 
 image: ./../assets/img/posts/2025-08-22-mastering-the-singleton-pattern-one-instance-to-rule-them-all.png
-
 date: 2025-08-22 00:00:00 +0300
 categories: [Design Patterns, Creational Patterns] 
 tags: [ design patterns, software development, object-oriented programming, oop, java, clean code, software architecture, programming, best practices, developer tips, programming best practices, software engineering, singleton pattern, creational patterns, java design patterns tutorial, spring boot, gang of four design patterns, java singleton ]
+
 ---
 
 > This article had its first draft written by AI, then refined by human editing to ensure clarity, correctness, and real-world applicability. 
@@ -13,7 +14,7 @@ tags: [ design patterns, software development, object-oriented programming, oop,
 
 ---
 
-## 1: The Hook and Introduction
+## **1: The Hook and Introduction**
 
 Imagine you’re managing a concert ticketing system. There’s only one “official” box office that can issue tickets — if multiple independent offices start selling tickets without coordination, chaos will follow. You’d risk double-bookings, inconsistent pricing, and unhappy customers.
 
@@ -31,7 +32,7 @@ In this article, you’ll learn:
 
 ---
 
-## 2: A Real-World Analogy
+## **2: A Real-World Analogy**
 
 Think of the **President of a country**. Regardless of how many government departments exist, there’s only one person officially holding the position at any given time.\
 Everyone who needs to interact with the President must go through the same single authority, ensuring consistent decision-making and avoiding contradictory orders.
@@ -40,7 +41,7 @@ That’s exactly the idea behind the Singleton Pattern — centralizing control 
 
 ---
 
-## 3: Pattern Overview
+## **3: Pattern Overview**
 
 **Definition (Gang of Four):**
 
@@ -60,7 +61,7 @@ That’s exactly the idea behind the Singleton Pattern — centralizing control 
 
 ---
 
-## 4: UML Diagram
+## **4: UML Diagram**
 
 ```
 +-------------------------------+
@@ -75,7 +76,7 @@ That’s exactly the idea behind the Singleton Pattern — centralizing control 
 
 ---
 
-## 5: Java Example (with Thread Safety)
+## **5: Java Example (with Thread Safety)**
 
 Here’s a basic Java implementation:
 
@@ -129,6 +130,7 @@ public class ConfigurationManager {
 
 }
 ```
+
 **Key benefits of using the private Holder:**
 - Thread-safe by default due to JVM's class initialization guarantees
 - Lazy initialization is handled by the JVM
@@ -149,7 +151,7 @@ public class App {
 
 ---
 
-### Spring Boot Context
+### **Spring Boot Context**
 
 In Spring, you rarely implement Singleton manually because Spring beans are **Singleton-scoped by default**:
 
@@ -166,7 +168,7 @@ Spring ensures that only **one instance** of `AppConfigService` exists within th
 
 ---
 
-## 6: Advantages & Disadvantages
+## **6: Advantages & Disadvantages**
 
 **Advantages:**
 
@@ -183,7 +185,7 @@ Spring ensures that only **one instance** of `AppConfigService` exists within th
 
 ---
 
-## 7: When to Use or Avoid
+## **7: When to Use or Avoid**
 
 **Use it when:**
 
@@ -199,7 +201,7 @@ Spring ensures that only **one instance** of `AppConfigService` exists within th
 
 ---
 
-## 8: Conclusion
+## **8: Conclusion**
 
 The Singleton Pattern is simple yet powerful when used correctly. It ensures one instance, keeps state consistent, and prevents resource conflicts. But overuse can make systems rigid and hard to test.
 
@@ -217,8 +219,7 @@ The Singleton Pattern is simple yet powerful when used correctly. It ensures one
 
 ---
 
-## 9: References & Further Reading
-
+## **References & Further Reading**
 - Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
 - Martin, Robert C. *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall, 2008.
 - Refactoring.Guru: [Singleton Pattern](https://refactoring.guru/design-patterns/singleton)
