@@ -9,21 +9,18 @@ tags: [ design patterns, software development, object-oriented programming, oop,
 
 ---
 
-> This article had its first draft written by AI, then refined by human editing to ensure clarity, correctness, and real-world applicability.
-> {: .prompt-info }
+> This article had its first draft written by AI, then refined by human editing to ensure clarity, correctness, and real-world applicability. 
+{: .prompt-info }
 
 ---
 
 ## **1: The Hook and Introduction**
 
-Imagine you’re managing a concert ticketing system. There’s only one “official” box office that can issue tickets — if multiple independent offices start selling
-tickets without coordination, chaos will follow. You’d risk double-bookings, inconsistent pricing, and unhappy customers.
+Imagine you’re managing a concert ticketing system. There’s only one “official” box office that can issue tickets — if multiple independent offices start selling tickets without coordination, chaos will follow. You’d risk double-bookings, inconsistent pricing, and unhappy customers.
 
-In software, certain objects need the same kind of exclusivity. Whether it’s a configuration manager, a logging service, or a database connection pool, sometimes *
-*only one instance** should exist to maintain consistency and avoid conflicts.
+In software, certain objects need the same kind of exclusivity. Whether it’s a configuration manager, a logging service, or a database connection pool, sometimes **only one instance** should exist to maintain consistency and avoid conflicts.
 
-The **Singleton Pattern** is a **creational design pattern** that solves this problem by ensuring a class has exactly one instance and provides a global access point
-to it. Like strong medicine, it should be used sparingly and with full awareness of the side effects.
+The **Singleton Pattern** is a **creational design pattern** that solves this problem by ensuring a class has exactly one instance and provides a global access point to it. Like strong medicine, it should be used sparingly and with full awareness of the side effects.
 
 In this article, you’ll learn:
 
@@ -37,8 +34,7 @@ In this article, you’ll learn:
 
 ## **2: A Real-World Analogy**
 
-Think of the **President of a country**. Regardless of how many government departments exist, there’s only one person officially holding the position at any given
-time.\
+Think of the **President of a country**. Regardless of how many government departments exist, there’s only one person officially holding the position at any given time.\
 Everyone who needs to interact with the President must go through the same single authority, ensuring consistent decision-making and avoiding contradictory orders.
 
 That’s exactly the idea behind the Singleton Pattern — centralizing control by having only one point of truth.
@@ -61,7 +57,7 @@ That’s exactly the idea behind the Singleton Pattern — centralizing control 
 
 - The class keeps a **private static reference** to its single instance.
 - The constructor is **private** to prevent external creation.
-- A **public static method** (commonly `getInstance()`) returns the instance, creating it if needed.
+- A **public static method** (commonly `getInstance()`) returns the instance,  creating it if needed.
 
 ---
 
@@ -87,24 +83,24 @@ Here’s a basic Java implementation:
 ```java
 public class ConfigurationManager {
 
-  private static ConfigurationManager instance;
+    private static ConfigurationManager instance;
 
-  private String appName;
+    private String appName;
 
-  private ConfigurationManager() {
-    this.appName = "My Awesome App";
-  }
-
-  public static ConfigurationManager getInstance() {
-    if (instance == null) {
-      instance = new ConfigurationManager();
+    private ConfigurationManager() {
+        this.appName = "My Awesome App";
     }
-    return instance;
-  }
 
-  public String getAppName() {
-    return appName;
-  }
+    public static ConfigurationManager getInstance() {
+        if (instance == null) {    
+            instance = new ConfigurationManager();
+        }
+        return instance;
+    }
+
+    public String getAppName() {
+        return appName;
+    }
 
 }
 ```
@@ -114,29 +110,28 @@ Here’s a clean thread-safe Java implementation with the best practice:
 ```java
 public class ConfigurationManager {
 
-  private String appName;
+    private String appName;
 
-  private ConfigurationManager() {
-    this.appName = "My Awesome App";
-  }
+    private ConfigurationManager() {
+        this.appName = "My Awesome App";
+    }
 
-  private static class Holder {
-    private static final ConfigurationManager INSTANCE = new ConfigurationManager();
-  }
+    private static class Holder {
+        private static final ConfigurationManager INSTANCE = new ConfigurationManager();
+    }
 
-  public static ConfigurationManager getInstance() {
-    return Holder.INSTANCE;
-  }
+    public static ConfigurationManager getInstance() {
+        return Holder.INSTANCE;
+    }
 
-  public String getAppName() {
-    return appName;
-  }
+    public String getAppName() {
+        return appName;
+    }
 
 }
 ```
 
 **Key benefits of using the private Holder:**
-
 - Thread-safe by default due to JVM's class initialization guarantees
 - Lazy initialization is handled by the JVM
 - No need for volatile or synchronized keywords
@@ -147,10 +142,10 @@ public class ConfigurationManager {
 
 ```java
 public class App {
-  public static void main(String[] args) {
-    ConfigurationManager config = ConfigurationManager.getInstance();
-    System.out.println(config.getAppName());
-  }
+    public static void main(String[] args) {
+        ConfigurationManager config = ConfigurationManager.getInstance();
+        System.out.println(config.getAppName());
+    }
 }
 ```
 
@@ -161,12 +156,11 @@ public class App {
 In Spring, you rarely implement Singleton manually because Spring beans are **Singleton-scoped by default**:
 
 ```java
-
 @Service
 public class AppConfigService {
-  public String getAppName() {
-    return "My Awesome Spring App";
-  }
+    public String getAppName() {
+        return "My Awesome Spring App";
+    }
 }
 ```
 
@@ -209,8 +203,7 @@ Spring ensures that only **one instance** of `AppConfigService` exists within th
 
 ## **8: Conclusion**
 
-The Singleton Pattern is simple yet powerful when used correctly. It ensures one instance, keeps state consistent, and prevents resource conflicts. But overuse can
-make systems rigid and hard to test.
+The Singleton Pattern is simple yet powerful when used correctly. It ensures one instance, keeps state consistent, and prevents resource conflicts. But overuse can make systems rigid and hard to test.
 
 **Key Takeaways:**
 
@@ -226,18 +219,7 @@ make systems rigid and hard to test.
 
 ---
 
-## **GitHub Example**
-
-You can find the complete, working code example for design patterns in my public GitHub repository. Feel free to clone it and experiment with the code.
-
-- GitHub Repository - Design Patterns: [mcakar-dev/design-patterns](https://github.com/mcakar-dev/design-patterns)
-- GitHub Repository -
-  Singleton: [mcakar-dev/design-patterns - Singleton](https://github.com/mcakar-dev/design-patterns/tree/main/src/main/java/io/github/mcakardev/design/patterns/creational/singleton)
-
----
-
 ## **References & Further Reading**
-
 - Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
 - Martin, Robert C. *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall, 2008.
 - Refactoring.Guru: [Singleton Pattern](https://refactoring.guru/design-patterns/singleton)
