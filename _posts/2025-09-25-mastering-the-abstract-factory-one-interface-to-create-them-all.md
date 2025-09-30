@@ -355,6 +355,15 @@ If the Factory Method is about choosing the right tool for the job, the Abstract
 
 ---
 
+## **GitHub Example**
+
+You can find the complete, working code example for design patterns in my public GitHub repository. Feel free to clone it and experiment with the code.
+
+- GitHub Repository - Design Patterns: [mcakar-dev/design-patterns](https://github.com/mcakar-dev/design-patterns)
+- GitHub Repository - Abstract Factory: [mcakar-dev/design-patterns - Abstract Factory](https://github.com/mcakar-dev/design-patterns/tree/main/src/main/java/io/github/mcakardev/design/patterns/creational/abstractfactory)
+
+---
+
 ## **References & Further Reading**
 - *Head First Design Patterns* by Eric Freeman & Elisabeth Robson  
 - *Design Patterns: Elements of Reusable Object-Oriented Software* by Gamma, Helm, Johnson, Vlissides  
