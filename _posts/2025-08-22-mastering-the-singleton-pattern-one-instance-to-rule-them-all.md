@@ -219,6 +219,15 @@ The Singleton Pattern is simple yet powerful when used correctly. It ensures one
 
 ---
 
+## **GitHub Example**
+
+You can find the complete, working code example for design patterns in my public GitHub repository. Feel free to clone it and experiment with the code.
+
+- GitHub Repository - Design Patterns: [mcakar-dev/design-patterns](https://github.com/mcakar-dev/design-patterns)
+- GitHub Repository - Singleton: [mcakar-dev/design-patterns - Singleton](https://github.com/mcakar-dev/design-patterns/tree/main/src/main/java/io/github/mcakardev/design/patterns/creational/singleton)
+
+---
+
 ## **References & Further Reading**
 - Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
 - Martin, Robert C. *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall, 2008.

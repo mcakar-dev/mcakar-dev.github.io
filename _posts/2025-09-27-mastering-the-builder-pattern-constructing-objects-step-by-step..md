@@ -318,6 +318,15 @@ Good code is not just about what it does; it's about how clearly it communicates
 
 ---
 
+## **GitHub Example**
+
+You can find the complete, working code example for design patterns in my public GitHub repository. Feel free to clone it and experiment with the code.
+
+- GitHub Repository - Design Patterns: [mcakar-dev/design-patterns](https://github.com/mcakar-dev/design-patterns)
+- GitHub Repository - Builder: [mcakar-dev/design-patterns - Builder](https://github.com/mcakar-dev/design-patterns/tree/main/src/main/java/io/github/mcakardev/design/patterns/creational/builder)
+
+---
+
 ## **References & Further Reading**
 * *Effective Java* by Joshua Bloch
 * *Head First Design Patterns* by Eric Freeman & Elisabeth Robson  

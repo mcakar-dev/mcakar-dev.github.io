@@ -370,6 +370,3 @@ You can find the complete, working code example for design patterns in my public
 - *Clean Architecture: A Craftsman's Guide to Software Structure and Design* by Robert C. Martin 
 - Baeldung: [Abstract Factory Pattern in Java](https://www.baeldung.com/java-abstract-factory-pattern)
 - Refactoring.Guru: [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
-
-
-

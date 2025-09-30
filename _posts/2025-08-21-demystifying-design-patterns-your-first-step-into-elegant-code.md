@@ -140,6 +140,14 @@ Some patterns blur these boundaries, but this grouping is a helpful starting poi
 
 ---
 
+## **GitHub Example**
+
+You can find the complete, working code example for design patterns in my public GitHub repository. Feel free to clone it and experiment with the code.
+
+- GitHub Repository - Design Patterns: [mcakar-dev/design-patterns](https://github.com/mcakar-dev/design-patterns)
+
+---
+
 ## **References & Further Reading**
 - Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
 - Fowler, Martin. *Patterns of Enterprise Application Architecture*. Addison-Wesley, 2002.

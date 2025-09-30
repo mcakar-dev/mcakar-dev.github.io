@@ -276,9 +276,17 @@ The **Factory Method Pattern** is a cornerstone of clean, extensible OOP design.
 
 ---
 
+## **GitHub Example**
+
+You can find the complete, working code example for design patterns in my public GitHub repository. Feel free to clone it and experiment with the code.
+
+- GitHub Repository - Design Patterns: [mcakar-dev/design-patterns](https://github.com/mcakar-dev/design-patterns)
+- GitHub Repository - Factory Method: [mcakar-dev/design-patterns - Factory Method](https://github.com/mcakar-dev/design-patterns/tree/main/src/main/java/io/github/mcakardev/design/patterns/creational/factory)
+
+---
+
 ## **References & Further Reading**
 - Refactoring.Guru: [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 - GeeksforGeeks: [Factory method Design Pattern](https://www.geeksforgeeks.org/system-design/factory-method-for-designing-pattern/)
 - *Head First Design Patterns* by Eric Freeman & Elisabeth Robson
 - *Design Patterns: Elements of Reusable Object-Oriented Software* by Gamma, Helm, Johnson, Vlissides
-
