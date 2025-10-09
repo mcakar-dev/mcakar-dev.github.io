@@ -376,5 +376,5 @@ You can find the complete, working code example for design patterns in my public
 * *Effective Java* by Joshua Bloch
 * *Head First Design Patterns* by Eric Freeman & Elisabeth Robson
 * *Design Patterns: Elements of Reusable Object-Oriented Software* by Gamma, Helm, Johnson, Vlissides
-* Baeldung: [Prototype Design Pattern in Java](https://www.google.com/search?q=https://www.baeldung.com/java-prototype-pattern)
+* Baeldung: [Prototype Pattern in Java](https://www.baeldung.com/java-pattern-prototype)
 * Refactoring.Guru: [Prototype](https://refactoring.guru/design-patterns/prototype)
