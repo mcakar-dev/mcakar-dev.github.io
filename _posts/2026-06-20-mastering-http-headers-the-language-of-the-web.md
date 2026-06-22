@@ -133,7 +133,26 @@ Dictates exactly how, where, and for how long a response can be cached by browse
 
 ---
 
-## **8. Conclusion**
+## **8. The CORS Problem (Cross-Origin Resource Sharing)**
+
+If you are a frontend developer, you have inevitably seen this dreaded error in your browser console:
+> *Access to fetch at 'api.example.com' from origin 'localhost:3000' has been blocked by CORS policy.*
+
+Browsers enforce a **Same-Origin Policy** for security. If your website is running on `domain-a.com`, the browser will automatically block any JavaScript attempting to read data from `domain-b.com`. 
+
+How do we bypass this? Using CORS Headers.
+
+If `domain-b.com` wants to allow `domain-a.com` to read its data, its server must return a specific response header:
+```text
+Access-Control-Allow-Origin: https://domain-a.com
+```
+(Or `Access-Control-Allow-Origin: *` to allow any domain, though this is insecure for authenticated routes).
+
+*Important Context:* CORS is entirely enforced by the **browser**, not the server. This is why you can successfully `curl` an API from your terminal or hit it with Postman, but the exact same request fails with a CORS error in Chrome. Postman doesn't enforce the Same-Origin Policy; Chrome does.
+
+---
+
+## **9. Conclusion**
 
 Headers are the control pane of the HTTP protocol. By using them correctly, you ensure your applications are secure, performant, and universally understood by the entire internet ecosystem.
 
@@ -156,4 +175,5 @@ Want to see headers in action? I have built an interactive portal where you can 
 
 ## **References**
 - [MDN Web Docs: HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+- [MDN Web Docs: CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 - [RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html)
